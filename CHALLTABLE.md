@@ -1,8 +1,3 @@
-# LeetCode
-Solutions for LeetCode's Problems
-
-[LeetCode Profile](https://leetcode.com/tthomasagg/)
-
 | #    | Title                                                                                                                                             | Solution                                                                                                                                        | Difficulty |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)                                                                 | [Typescript](https://github.com/tthomasagg/leetcode/blob/main/typescript/1672-richest-customer-wealth/index.ts)                                 | Easy       |
