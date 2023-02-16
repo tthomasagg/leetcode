@@ -1,0 +1,33 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "Solutions for LeetCode's Problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "updatetables": "node --loader ts-node/esm update-table.ts",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tthomasagg/leetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tthomasagg/leetcode/issues"
+  },
+  "homepage": "https://github.com/tthomasagg/leetcode#readme",
+  "devDependencies": {
+    "@types/mdast": "^3.0.10",
+    "@types/node": "^18.13.0",
+    "husky": "^8.0.0",
+    "mdast-util-gfm-table": "^1.0.7",
+    "mdast-util-to-markdown": "^1.5.0",
+    "remark": "^14.0.2",
+    "remark-gfm": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "type": "module"
+}
