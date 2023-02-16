@@ -1,8 +1,3 @@
-# LeetCode
-Solutions for LeetCode's Problems
-
-[LeetCode Profile](https://leetcode.com/tthomasagg/)
-
 | #    | Title                                                                                                                                             | Solution                                                                                                                                        | Difficulty |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 123  | [Test Test](https://leetcode.com/problems/test-test/)                                                                                             | [Typescript](https://github.com/tthomasagg/leetcode/blob/main/typescript/123-test-test/index.ts)                                                | Hard       |
