@@ -72,13 +72,20 @@ type RepoFilesType = {
             const infoTable: Table = children.filter((content) => content.type === 'table').shift() as Table
             if (infoTable !== undefined) {
                 table.children.splice(1, 0, infoTable.children[1])
+            } else {
+                console.log(`Metadata is missing on ${file.filename}`)
             }
         }
 
         const resultMarkdown = toMarkdown(table, { extensions: [gfmTableToMarkdown()] })
 
-        // save to CHALLTABLE.md and append to readme.md
+        const originalTable = readFileSync(README_PATH)
+        const parsedOriginalTable = await remarkedGfm.parse(originalTable)
+        parsedOriginalTable.children = parsedOriginalTable.children.filter((content) => content.type !== 'table')
 
+        const resultOriginalMarkdown = toMarkdown(parsedOriginalTable)
+
+        writeFileSync(README_PATH, new TextEncoder().encode(resultOriginalMarkdown))
         writeFileSync(CHALL_TABLE_PATH, new TextEncoder().encode(resultMarkdown))
         appendFileSync(README_PATH, new TextEncoder().encode(`\n\n${resultMarkdown}`))
     } else {
