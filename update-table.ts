@@ -30,7 +30,7 @@ const languages = ['typescript']
 
 const languagesSrc = languages.map((src) => join(__dirname, src));
 
-const sortStagedFilesByDateDescCMD = `git diff --name-only --diff-filter=d --staged | sed "s|^$(basename "$(pwd)")/||g" | xargs -i stat --format="%Y %n" | awk '{print strftime("%Y-%m-%d %H:%M:%S +0000", $1), "|", $2}'`;
+const sortStagedFilesByDateDescCMD = `git diff --name-only --diff-filter=d --staged | sed "s|^$(basename "$(pwd)")/||g" | xargs stat --format="%Y %n" | awk '{print strftime("%Y-%m-%d %H:%M:%S +0000", $1), "|", $2}'`;
 //credits to https://serverfault.com/a/1031956
 const sortExistingFilesByDateDescCMD = `git ls-tree -r --name-only HEAD -z | TZ=UTC xargs -0n1 -I_ git --no-pager log -1 --date=iso-local --format="%ad | _" -- _`
 const sortFilesByDateDescCMD = (directory: string) => `cd ${directory} && echo "$(${sortStagedFilesByDateDescCMD})" "\n$(${sortExistingFilesByDateDescCMD})" | sort --reverse`;
