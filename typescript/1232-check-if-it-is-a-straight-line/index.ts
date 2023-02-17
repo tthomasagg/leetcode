@@ -1,5 +1,10 @@
 // first attempt
 // Beats: Runtime 89.29% / Memory 30%
+/*
+| #    | Title                                                                                                                                             | Solution                                                                                                                                        | Difficulty |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 1232 | [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/) | [Typescript](https://github.com/tthomasagg/leetcode/blob/main/typescript/1232-check-if-it-is-a-straight-line/index.ts) | Easy |
+* */
 
 function checkStraightLine(coordinates: number[][]): boolean {
     const y2 = coordinates[1][1]
