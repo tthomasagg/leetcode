@@ -1,6 +1,6 @@
 # LeetCode
 
-Solutions for LeetCode's Problems
+Solutions for LeetCode's Problemss
 
 [LeetCode Profile](https://leetcode.com/tthomasagg/)
 
